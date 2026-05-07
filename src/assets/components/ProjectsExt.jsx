@@ -1,26 +1,28 @@
 import { motion } from "framer-motion";
 
+const BASE = import.meta.env.BASE_URL;
+
 export default function ProjectsExt({ darkMode }) {
     const projects = [
         {
             id: 1,
             name: "Sneakers Store",
             description: "E-commerce Sneaker Store",
-            image: "/images/paramount.png",
+            image: `${BASE}images/paramount.png`,
             link: "https://your-paramount-site.com",
         },
         {
             id: 2,
             name: "Hairstylist Studio",
             description: "Hairstylist Booking Platform",
-            image: "/images/bnm.png",
+            image: `${BASE}images/bnm.png`,
             link: "https://bxxjay.github.io/REACT.JS/",
         },
         {
             id: 3,
             name: "AIHUB",
             description: "AI Aggregator Web App",
-            image: "/images/aihub.png",
+            image: `${BASE}images/aihub.png`,
             link: "https://your-aihub-site.com",
         },
     ];

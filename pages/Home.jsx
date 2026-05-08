@@ -9,6 +9,7 @@ import Tools from '../src/assets/components/Tools';
 import Thoughts from '../src/assets/components/Thoughts';
 import Contact from '../src/assets/components/Contact';
 import About from '../src/assets/components/About';
+import Footer from '../src/assets/components/Footer';
 
 export default function Home() {
     const [darkMode, setDarkMode] = useState(true);
@@ -44,6 +45,7 @@ export default function Home() {
             <Tools darkMode={darkMode} />
             <Thoughts darkMode={darkMode} />
             <Contact darkMode={darkMode} />
+            <Footer darkMode={darkMode} />
         </main>
 
     </div>

@@ -3,6 +3,7 @@ import Sidenav from '../src/assets/components/Sidenav';
 import Header from '../src/assets/components/Header';
 import Projects from '../src/assets/components/ProjectsExt';
 import Contact from '../src/assets/components/Contact';
+import Footer from '../src/assets/components/Footer';
 
 export default function ProjectPage() {
     const [darkMode, setDarkMode] = useState(true);
@@ -32,6 +33,7 @@ export default function ProjectPage() {
             </div>
             <Projects darkMode={darkMode} />
             <Contact darkMode={darkMode} />
+            <Footer darkMode={darkMode} />
         </main>
     </div>
 );

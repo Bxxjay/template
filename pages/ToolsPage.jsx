@@ -3,6 +3,7 @@ import Sidenav from '../src/assets/components/Sidenav';
 import Header from '../src/assets/components/Header';
 import Tools from '../src/assets/components/Tools';
 import Contact from '../src/assets/components/Contact';
+import Footer from '../src/assets/components/Footer';
 
 export default function ToolsPage() {
     const [darkMode, setDarkMode] = useState(true);
@@ -32,6 +33,7 @@ export default function ToolsPage() {
             </div>
             <Tools darkMode={darkMode} />
             <Contact darkMode={darkMode} />
+            <Footer darkMode={darkMode} />
         </main>
     </div>
 );

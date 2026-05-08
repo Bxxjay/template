@@ -1,5 +1,7 @@
+import { motion } from "framer-motion";
+
 export default function Experience({ darkMode }) {
-     const projects = [
+    const projects = [
         {
             id: 1,
             name: "Motorola Solutions",
@@ -15,33 +17,48 @@ export default function Experience({ darkMode }) {
         {
             id: 3,
             name: "Emstill Solutions",
-            description: "Worked as a Software Engineer at a FinTech company,Where i was responsible for developing and maintaining software applications that support financial services. I collaborated with cross-functional teams to design and implement new features, optimize existing code, and ensure the reliability and security of our applications. This role provided me with valuable experience in software development, problem-solving, and working in a fast-paced environment.",
-            date: "July 2022 - Dec 2023"
+            description: "Worked as a Software Engineer at a FinTech company during the internship period from my university, where I was responsible for developing and maintaining software applications that support financial services. I collaborated with cross-functional teams to design and implement new features, optimize existing code, and ensure the reliability and security of our applications.",
+            date: "Jun 2023 - Dec 2023"
         },
-    ]
-    
-    
-    return ( 
+    ];
+
+    return (
         <section className={`px-8 md:px-16 py-10 transition-colors duration-300 ${darkMode ? "bg-[#111111]" : "bg-[#f5f5f5]"}`}>
 
             {/* heading */}
             <div className="mb-8">
-                <h1 className={`text-6xl sm:text-7xl md:text-8xl font-black leading-none tracking-tight uppercase ${darkMode ? "text-white" : "text-black"}`}>
-                    3 YEARS OF 
-                </h1>
-                <h1 className={`text-6xl sm:text-7xl md:text-8xl font-black leading-none tracking-tight uppercase ${darkMode ? "text-[#333333]" : "text-orange-500"}`}>
-                    EXPERIENCE
-                </h1>
+                <motion.h1
+                    initial={{ opacity: 0, x: -60 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.6, ease: "easeOut" }}
+                    viewport={{ once: true }}
+                    className={`text-6xl sm:text-7xl md:text-8xl font-black leading-none tracking-tight uppercase ${darkMode ? "text-white" : "text-black"}`}
+                >
+                    2 Years Of
+                </motion.h1>
+                <motion.h1
+                    initial={{ opacity: 0, x: -60 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.6, ease: "easeOut", delay: 0.15 }}
+                    viewport={{ once: true }}
+                    className={`text-6xl sm:text-7xl md:text-8xl font-black leading-none tracking-tight uppercase ${darkMode ? "text-[#333333]" : "text-orange-500"}`}
+                >
+                    Experience
+                </motion.h1>
             </div>
 
-              {/* project list */}
+            {/* experience list */}
             <div className="flex flex-col gap-4">
-                {projects.map((project) => (
-                    <a
+                {projects.map((project, i) => (
+                    <motion.a
                         key={project.id}
-                        href= "#"
+                        href="#"
                         target="_blank"
                         rel="noopener noreferrer"
+                        initial={{ opacity: 0, x: 60 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.6, ease: "easeOut", delay: i * 0.15 }}
+                        viewport={{ once: true }}
                         className={`group flex items-center gap-6 rounded-2xl p-4 transition-all duration-300 cursor-pointer
                             ${darkMode
                                 ? "bg-[#1a1a1a] hover:bg-[#222222] hover:scale-[1.02] hover:shadow-xl"
@@ -56,7 +73,7 @@ export default function Experience({ darkMode }) {
                             <p className={`text-sm ${darkMode ? "text-gray-400" : "text-gray-500"}`}>
                                 {project.description}
                             </p>
-                            <p className={`text-sm italic ${darkMode ? "text-gray-400" : "text-gray-500"}`}>
+                            <p className={`text-sm italic mt-1 text-orange-500`}>
                                 {project.date}
                             </p>
                         </div>
@@ -73,9 +90,10 @@ export default function Experience({ darkMode }) {
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M7 17L17 7M17 7H7M17 7v10" />
                             </svg>
                         </div>
-                    </a>
+                    </motion.a>
                 ))}
             </div>
+
         </section>
     );
 }

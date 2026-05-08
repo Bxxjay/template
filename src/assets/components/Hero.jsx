@@ -33,20 +33,20 @@ function CountUp({ target, duration = 2000 }) {
 export default function Hero({ darkMode }) {
     const stats = [
         { value: 24, label: "MONTHS OF EXPERIENCE" },
-        { value: 46, label: "PROJECTS COMPLETED" },
-        { value: 20, label: "WORLDWIDE CLIENTS" },
+        { value: 32, label: "PROJECTS COMPLETED" },
+        { value: 17, label: "WORLDWIDE CLIENTS" },
     ];
 
     return (
         <section className={`min-h-screen flex flex-col justify-center px-8 md:px-16 py-20 transition-colors duration-300 ${darkMode ? "bg-[#111111]" : "bg-[#f5f5f5]"}`}>
 
-            <div className="mb-8 overflow-hidden">
+            <div className="mb-8">
                 <motion.h1
                     initial={{ opacity: 0, y: 80 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.7, ease: "easeOut" }}
                     viewport={{ once: true }}
-                    className={`text-6xl sm:text-7xl md:text-8xl font-black leading-none tracking-tight uppercase ${darkMode ? "text-white" : "text-black"}`}
+                    className={`text-5xl sm:text-7xl md:text-8xl font-black leading-tight tracking-tight uppercase ${darkMode ? "text-white" : "text-black"}`}
                 >
                     Software
                 </motion.h1>
@@ -55,7 +55,7 @@ export default function Hero({ darkMode }) {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.7, ease: "easeOut", delay: 0.15 }}
                     viewport={{ once: true }}
-                    className={`text-6xl sm:text-7xl md:text-8xl font-black leading-none tracking-tight uppercase ${darkMode ? "text-[#333333]" : "text-orange-500"}`}
+                    className={`text-5xl sm:text-7xl md:text-8xl font-black leading-tight tracking-tight uppercase ${darkMode ? "text-[#333333]" : "text-orange-500"}`}
                 >
                     Engineer
                 </motion.h1>

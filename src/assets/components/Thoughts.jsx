@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 export default function Thoughts({ darkMode }) {
     const projects = [
         {
@@ -30,21 +31,37 @@ export default function Thoughts({ darkMode }) {
 
             {/* heading */}
             <div className="mb-8">
-                <h1 className={`text-6xl sm:text-7xl md:text-8xl font-black leading-none tracking-tight uppercase ${darkMode ? "text-white" : "text-black"}`}>
+                <motion.h1
+                    initial={{ opacity: 0, x: -60 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.6, ease: "easeOut" }}
+                    viewport={{ once: true }}
+                    className={`text-6xl sm:text-7xl md:text-8xl font-black leading-none tracking-tight uppercase ${darkMode ? "text-white" : "text-black"}`}
+                >
                     Design
-                </h1>
-                <h1 className={`text-6xl sm:text-7xl md:text-8xl font-black leading-none tracking-tight uppercase ${darkMode ? "text-[#333333]" : "text-orange-500"}`}>
+                </motion.h1>
+                <motion.h1
+                    initial={{ opacity: 0, x: -60 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.6, ease: "easeOut", delay: 0.15 }}
+                    viewport={{ once: true }}
+                    className={`text-6xl sm:text-7xl md:text-8xl font-black leading-none tracking-tight uppercase ${darkMode ? "text-[#333333]" : "text-orange-500"}`}
+                >
                     Thoughts
-                </h1>
+                </motion.h1>
             </div>
 
-             <div className="flex flex-col gap-4">
-                {projects.map((project) => (
-                    <a
+            <div className="flex flex-col gap-4">
+                {projects.map((project, i) => (
+                    <motion.a
                         key={project.id}
                         href={project.link}
                         target="_blank"
                         rel="noopener noreferrer"
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, ease: "easeOut", delay: i * 0.15 }}
+                        viewport={{ once: true }}
                         className={`group flex items-center gap-6 rounded-2xl p-4 transition-all duration-300 cursor-pointer
                             ${darkMode
                                 ? "bg-[#1a1a1a] hover:bg-[#222222] hover:scale-[1.02] hover:shadow-xl"
@@ -59,7 +76,7 @@ export default function Thoughts({ darkMode }) {
                             <p className={`text-sm ${darkMode ? "text-gray-400" : "text-gray-500"}`}>
                                 {project.description}
                             </p>
-                            <p className={`text-sm italic ${darkMode ? "text-gray-400" : "text-gray-500"}`}>
+                            <p className="text-sm italic mt-1 text-orange-500">
                                 {project.date}
                             </p>
                         </div>
@@ -76,9 +93,10 @@ export default function Thoughts({ darkMode }) {
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M7 17L17 7M17 7H7M17 7v10" />
                             </svg>
                         </div>
-                    </a>
+                    </motion.a>
                 ))}
             </div>
+
         </section>
     );
 }

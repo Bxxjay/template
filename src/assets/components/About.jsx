@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
 
-const BASE = import.meta.env.BASE_URL;
-
 export default function About({ darkMode }) {
     return (
         <section className={`px-8 md:px-16 py-10 transition-colors duration-300 ${darkMode ? "bg-[#111111]" : "bg-[#f5f5f5]"}`}>
@@ -69,7 +67,7 @@ export default function About({ darkMode }) {
                 >
                     <div className={`w-64 h-72 rounded-2xl overflow-hidden ${darkMode ? "bg-[#2a2a2a]" : "bg-[#e0e0e0]"}`}>
                         <img
-                            src={`${BASE}images/bxxjay.jpeg`}
+                            src="/template/images/bxxjay.jpeg"
                             alt="Bolaji"
                             className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
                         />

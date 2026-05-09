@@ -68,7 +68,7 @@ export default function About({ darkMode }) {
                 >
                     <div className={`w-64 h-72 rounded-2xl overflow-hidden ${darkMode ? "bg-[#2a2a2a]" : "bg-[#e0e0e0]"}`}>
                         <img
-                            src="/images/about.jpg"
+                            src="/template/images/bxxjay.jpeg"
                             alt="Bolaji"
                             className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
                         />

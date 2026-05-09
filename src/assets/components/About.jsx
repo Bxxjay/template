@@ -14,10 +14,10 @@ export default function About({ darkMode }) {
                     className="flex-1 flex flex-col gap-6"
                 >
                     <div>
-                        <h1 className={`text-6xl sm:text-7xl md:text-8xl font-black leading-none tracking-tight uppercase ${darkMode ? "text-white" : "text-black"}`}>
+                        <h1 className={`text-5xl sm:text-7xl md:text-8xl font-black leading-tight tracking-tight uppercase ${darkMode ? "text-white" : "text-black"}`}>
                             About
                         </h1>
-                        <h1 className={`text-6xl sm:text-7xl md:text-8xl font-black leading-none tracking-tight uppercase ${darkMode ? "text-[#333333]" : "text-orange-500"}`}>
+                        <h1 className={`text-5xl sm:text-7xl md:text-8xl font-black leading-tight tracking-tight uppercase ${darkMode ? "text-[#333333]" : "text-orange-500"}`}>
                             Me
                         </h1>
                     </div>
@@ -34,17 +34,18 @@ export default function About({ darkMode }) {
                         If you have something interesting, let's build it together.
                     </p>
 
+                    {/* CV buttons */}
                     <div className="flex items-center gap-4 mt-2">
-                        
-                        <a    href="/bxxjay.pdf"
+                        <a
+                            href="https://bxxjay.github.io/template/bxxjay.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="px-6 py-3 bg-orange-500 hover:bg-orange-600 text-white text-sm font-bold rounded-xl transition-colors duration-200"
                         >
                             View CV
                         </a>
-                        
-                        <a    href="/bxxjay.pdf"
+                        <a
+                            href="https://bxxjay.github.io/template/bxxjay.pdf"
                             download
                             className={`px-6 py-3 text-sm font-bold rounded-xl border transition-colors duration-200
                                 ${darkMode
@@ -67,7 +68,7 @@ export default function About({ darkMode }) {
                 >
                     <div className={`w-64 h-72 rounded-2xl overflow-hidden ${darkMode ? "bg-[#2a2a2a]" : "bg-[#e0e0e0]"}`}>
                         <img
-                            src="/template/images/bxxjay.jpeg"
+                            src="/images/about.jpg"
                             alt="Bolaji"
                             className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
                         />

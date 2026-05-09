@@ -8,7 +8,7 @@ export default defineConfig({
      tailwindcss()
   ],
    server: {
-    open: true,
+    open: false,
   },
   base: '/template/',
 })

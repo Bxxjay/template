@@ -8,8 +8,8 @@ export default function ProjectsExt({ darkMode }) {
             id: 1,
             name: "Sneakers Store",
             description: "E-commerce Sneaker Store",
-            image: `${BASE}images/paramount.png`,
-            link: "https://your-paramount-site.com",
+            image: `${BASE}images/sneakers.png`,
+            link: "https://bxxjay.github.io/VORTEX/",
         },
         {
             id: 2,

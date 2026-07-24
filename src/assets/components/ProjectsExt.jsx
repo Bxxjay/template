@@ -20,10 +20,10 @@ export default function ProjectsExt({ darkMode }) {
         },
         {
             id: 3,
-            name: "AIHUB",
-            description: "AI Aggregator Web App",
-            image: `${BASE}images/aihub.png`,
-            link: "https://your-aihub-site.com",
+            name: "Restaurant Website",
+            description: "Restaurant Bookings & Menu",
+            image: `${BASE}images/rest.png`,
+            link: "https://el-dulce-wheat.vercel.app/",
         },
     ];
 

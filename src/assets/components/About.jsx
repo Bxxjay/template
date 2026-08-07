@@ -37,7 +37,7 @@ export default function About({ darkMode }) {
                     {/* CV buttons */}
                     <div className="flex items-center gap-4 mt-2">
                         <a
-                            href="https://bxxjay.github.io/template/bxxjay.pdf"
+                            href="https://bxxjay.github.io/template/resume.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="px-6 py-3 bg-orange-500 hover:bg-orange-600 text-white text-sm font-bold rounded-xl transition-colors duration-200"
@@ -45,7 +45,7 @@ export default function About({ darkMode }) {
                             View CV
                         </a>
                         <a
-                            href="https://bxxjay.github.io/template/bxxjay.pdf"
+                            href="https://bxxjay.github.io/template/resume.pdf"
                             download
                             className={`px-6 py-3 text-sm font-bold rounded-xl border transition-colors duration-200
                                 ${darkMode

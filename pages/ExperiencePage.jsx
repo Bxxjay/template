@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import Sidenav from '../src/assets/components/Sidenav';
 import Header from '../src/assets/components/Header';
-import Experience from '../src/assets/components/Experience';
+import Experience from '../src/assets/components/ExperienceExt';
 import Contact from '../src/assets/components/Contact';
 import Footer from '../src/assets/components/Footer';
 

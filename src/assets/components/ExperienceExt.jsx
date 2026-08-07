@@ -1,7 +1,4 @@
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
-
-const MotionLink = motion(Link);
 
 export default function Experience({ darkMode }) {
     const projects = [
@@ -53,9 +50,10 @@ export default function Experience({ darkMode }) {
             {/* experience list */}
             <div className="flex flex-col gap-4">
                 {projects.map((project, i) => (
-                    <MotionLink
+                    <motion.a
                         key={project.id}
-                        to="/experience"
+                        disabled={true}
+                        rel="noopener noreferrer"
                         initial={{ opacity: 0, x: 60 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.6, ease: "easeOut", delay: i * 0.15 }}
@@ -91,7 +89,7 @@ export default function Experience({ darkMode }) {
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M7 17L17 7M17 7H7M17 7v10" />
                             </svg>
                         </div>
-                    </MotionLink>
+                    </motion.a>
                 ))}
             </div>
 

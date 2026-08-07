@@ -32,9 +32,9 @@ function CountUp({ target, duration = 2000 }) {
 
 export default function Hero({ darkMode }) {
     const stats = [
-        { value: 24, label: "MONTHS OF EXPERIENCE" },
+        { value: 36, label: "MONTHS OF EXPERIENCE" },
         { value: 32, label: "PROJECTS COMPLETED" },
-        { value: 17, label: "WORLDWIDE CLIENTS" },
+        { value: 20, label: "WORLDWIDE CLIENTS" },
     ];
 
     return (

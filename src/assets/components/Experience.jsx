@@ -98,8 +98,3 @@ export default function Experience({ darkMode }) {
         </section>
     );
 }
-
-            id: 2,
-            name: "Freelance Web Developer",
-            description: "Built multiple websites for clients, including e-commerce platforms, portfolio sites, and business websites. I worked closely with clients to understand their requirements and delivered customized solutions using modern web technologies. This experience allowed me to develop strong skills in front-end and back-end development, as well as project management and client communication.",
-            date: "Jan 2024 - Present"

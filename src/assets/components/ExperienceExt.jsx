@@ -2,17 +2,17 @@ import { motion } from "framer-motion";
 
 export default function Experience({ darkMode }) {
     const projects = [
-        {
+            {
             id: 1,
-            name: "Motorola Solutions",
-            description: "Internship as a Database Administrator, where I was responsible for managing and optimizing databases, ensuring data integrity, and supporting the development team with database-related tasks. I took on various projects, including database design, performance tuning, and data migration, which allowed me to gain hands-on experience in database management and administration.",
-            date: "Jan 2025 - Jan 2026"
+            name: "Freelance Software Engineer",
+            description: "Built multiple websites for clients, including e-commerce platforms, portfolio sites, and business websites. I worked closely with clients to understand their requirements and delivered customized solutions using modern web technologies. This experience allowed me to develop strong skills in front-end and back-end development, as well as project management and client communication.",
+            date: "Jan 2024 - Present"
         },
         {
             id: 2,
-            name: "Freelance Web Developer",
-            description: "Built multiple websites for clients, including e-commerce platforms, portfolio sites, and business websites. I worked closely with clients to understand their requirements and delivered customized solutions using modern web technologies. This experience allowed me to develop strong skills in front-end and back-end development, as well as project management and client communication.",
-            date: "Jan 2024 - Dec 2024"
+            name: "Motorola Solutions",
+            description: "Internship as a Database Administrator, where I was responsible for managing and optimizing databases, ensuring data integrity, and supporting the development team with database-related tasks. I took on various projects, including database design, performance tuning, and data migration, which allowed me to gain hands-on experience in database management and administration.",
+            date: "Jan 2025 - Dec 2025"
         },
         {
             id: 3,

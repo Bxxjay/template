@@ -49,7 +49,7 @@ export default function Footer({ darkMode }) {
         { label: "Projects",   path: "/projects" },
         { label: "Experience", path: "/experience" },
         { label: "Tools",      path: "/tools" },
-        { label: "Thoughts",   path: "/thoughts" },
+        { label: "Writings",   path: "/writings" },
     ];
 
     return (

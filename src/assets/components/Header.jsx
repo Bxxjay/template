@@ -12,7 +12,7 @@ export default function Header({ darkMode, setDarkMode }) {
         { id: "projects",   label: "Projects",   icon: <Folder size={20} />,   path: "/projects" },
         { id: "experience", label: "Experience", icon: <Briefcase size={20} />, path: "/experience" },
         { id: "tools",      label: "Tools",      icon: <Wrench size={20} />,   path: "/tools" },
-        { id: "thoughts",   label: "Thoughts",   icon: <PenLine size={20} />,  path: "/thoughts" },
+        { id: "writings",   label: "Writings",   icon: <PenLine size={20} />,  path: "/writings" },
     ];
 
     return (

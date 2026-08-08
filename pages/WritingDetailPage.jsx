@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
 import Sidenav from '../src/assets/components/Sidenav';
 import Header from '../src/assets/components/Header';
-import Thoughts from '../src/assets/components/ThoughtsExt';
+import WritingDetail from '../src/assets/components/WritingDetail';
 import Contact from '../src/assets/components/Contact';
 import Footer from '../src/assets/components/Footer';
 
-export default function ThoughtsPage() {
+export default function WritingDetailPage() {
     const [darkMode, setDarkMode] = useState(true);
 
     useEffect(() => {
@@ -20,7 +20,6 @@ export default function ThoughtsPage() {
     return (
     <div className={`flex flex-col md:flex-row md:h-screen md:overflow-hidden ${darkMode ? "bg-[#111111]" : "bg-[#f5f5f5]"}`}>
 
-        {/* header on mobile */}
         <div className={`md:hidden w-full ${darkMode ? "bg-[#111111]" : "bg-[#f5f5f5]"}`}>
             <Header darkMode={darkMode} setDarkMode={setDarkMode} />
         </div>
@@ -31,7 +30,7 @@ export default function ThoughtsPage() {
             <div className="hidden md:block">
                 <Header darkMode={darkMode} setDarkMode={setDarkMode} />
             </div>
-            <Thoughts darkMode={darkMode} />
+            <WritingDetail darkMode={darkMode} />
             <Contact darkMode={darkMode} />
             <Footer darkMode={darkMode} />
         </main>

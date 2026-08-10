@@ -34,11 +34,11 @@ export default function BackToTop() {
           right: "40px",
           padding: "15px 15px",
           fontSize: "16px",
-          backgroundColor: "#FF1493",
+          backgroundColor: "#F97316",
           color: "white",
           border: "none",
           cursor: "pointer",
-          borderRadius: "30%",
+          borderRadius: "50%",
         }}
       >
         ↑ 
